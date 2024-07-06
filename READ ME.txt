@@ -1,0 +1,20 @@
+The ideea of the project was to create a program that divides the audio file in smaller audio files to allow multiprocessing, as in a multimedia context the latency should be as little as posible. 
+
+1) First, create 3 folders named exactly :
+	
+	- Batches   : after running the program here will be the audio segments of 30s of the initial audio
+	- T_Batches : here will be segments of audio that consist of the last few seconds and first few seconds of the next 'batch'
+		    - it was necesarry because if the target word was pronounced right at the transition the code would not identify it
+
+	- Censored  : all the segments(both transition and normal ones) censored
+	
+2) Record yourself and create a wav file in the same folder as the ipynb file and the folders called :
+	- 'identify.wav'
+
+3) Make sure the file censor-beep-7.wav is also there
+
+4) After stopping the recording the audio there should be a file XXXXXX_XXXXXX recorded_audio which represents:
+								 YYMMDD_HHMMSS (which creates an unique identifier)
+5) The censored file should be in censored
+			
+
